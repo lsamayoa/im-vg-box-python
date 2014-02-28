@@ -98,11 +98,12 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.add_recipe "apt"
     chef.add_recipe "apache2::mod_wsgi"
     chef.add_recipe "build-essential"
-    chef.add_recipe "git"
     chef.add_recipe "vim"
+    chef.add_recipe "im-core-python"
   end
 
-  config.vm.provision "shell", path: "im-py-init.sh"
+
+  #config.vm.provision "shell", path: "im-py-init.sh"
 
   # Enable provisioning with chef server, specifying the chef server URL,
   # and the path to the validation key (relative to this Vagrantfile).
