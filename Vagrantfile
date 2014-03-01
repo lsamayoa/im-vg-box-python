@@ -35,7 +35,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #chef.add_recipe "apache2::mod_wsgi"
     #chef.add_recipe "build-essential"
     #chef.add_recipe "vim"
-    chef.add_recipe "im-core-python"
+    chef.add_recipe "im-reach"
   end
 
 end
